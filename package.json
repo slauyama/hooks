@@ -4,6 +4,8 @@
   "description": "personal react hooks to use on projects",
   "main": "dist/index.js",
   "scripts": {
+    "build": "npx tsc",
+    "start": "exit 0",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
@@ -18,5 +20,15 @@
   "homepage": "https://github.com/slauyama/hooks#readme",
   "publishConfig": {
     "@slauyama:registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
+    "react": "^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^5.9.3"
   }
 }
