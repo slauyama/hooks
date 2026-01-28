@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/slauyama/hooks#readme",
   "publishConfig": {
-    "@slauyama:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
     "react": "^19"
