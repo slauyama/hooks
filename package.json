@@ -1,0 +1,19 @@
+{
+  "name": "@slauyama/hooks",
+  "version": "1.0.0",
+  "description": "personal react hooks to use on projects",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slauyama/hooks.git"
+  },
+  "author": "Simon Lau-Yamauchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slauyama/hooks/issues"
+  },
+  "homepage": "https://github.com/slauyama/hooks#readme"
+}
