@@ -1,6 +1,6 @@
 {
   "name": "@slauyama/hooks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "personal react hooks to use on projects",
   "main": "dist/index.js",
   "scripts": {
