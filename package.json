@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/slauyama/hooks/issues"
   },
-  "homepage": "https://github.com/slauyama/hooks#readme"
+  "homepage": "https://github.com/slauyama/hooks#readme",
+  "publishConfig": {
+    "@slauyama:registry": "https://npm.pkg.github.com"
+  }
 }
