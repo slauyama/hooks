@@ -1,8 +1,9 @@
-name: Node.js Package
+name: Publish Node.js Package To Github on Push
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - "main"
 
 jobs:
   build:
@@ -28,7 +29,11 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: npm build
+      - run: npm run build
+      - name: Automated Version Bump
+        uses: phips28/gh-action-bump-version@v11.0.7
+        with:
+          commit-message: "CI: bumps version to {{version}} [skip ci]"
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
