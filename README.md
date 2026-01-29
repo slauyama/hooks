@@ -6,7 +6,7 @@
 
 ## Installation
 
-Setup `.npmrc` to read from proper registry. Auth Token needs to be set up in Github.
+Create `.npmrc` to read from proper registry. Auth Token needs to be set up in Github.
 
 ```
 //npm.pkg.github.com/:_authToken=AUTH_TOKEN
