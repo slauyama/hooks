@@ -7,7 +7,8 @@
   "scripts": {
     "build": "npx tsc",
     "start": "exit 0",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "aboutrelease": "Used by semantic-release as config options"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,12 @@
     "react-dom": "^19.2.4",
     "semantic-release": "^24.2.9",
     "typescript": "^5.9.3"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
   }
 }
