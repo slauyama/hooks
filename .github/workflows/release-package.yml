@@ -21,6 +21,7 @@ jobs:
       - run: npm run build
   release:
     name: Create Release
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       id-token: write # to enable use of OIDC for trusted publishing and npm provenance
@@ -32,7 +33,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22.x
-          registry-url: "https://registry.npmjs.org"
       - name: Install dependencies
         run: npm clean-install
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
@@ -57,7 +57,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 22x
+          node-version: 22.x
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm run build
