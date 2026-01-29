@@ -26,13 +26,11 @@
     "react": "^19"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.6",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "semantic-release": "^24.2.9",
     "typescript": "^5.9.3"
   }
 }
