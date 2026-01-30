@@ -3,6 +3,7 @@
 ## Hooks
 
 - useLocalStorage
+- useIsDarkMode
 
 ## Installation
 
